@@ -1,0 +1,35 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-grey);
+    width: 100%;
+    padding: 1rem 1rem;
+    color: var(--color-white);
+    transition: .3s ease;
+}
+
+@media screen and (max-width: 320px) {}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .header{
+        flex-direction: row;
+        padding: 0 2rem;
+        transition: .3s ease;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container{
+        margin-left: 4.5rem;
+        transition: .3s ease;
+    }
+}
+@media screen and (min-width: 1025px) {
+    .container{
+        margin-left: 4.5rem;
+        transition: .3s ease;
+    }
+}

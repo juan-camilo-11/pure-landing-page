@@ -1,0 +1,26 @@
+.component{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: .4rem;
+}
+
+.component__example{
+    width: calc(100% - 2rem);
+    border-radius: .5rem;
+    padding: 1rem;
+    border: 1px solid #000;
+}
+
+.component__usage{
+    width: calc(100% - 2rem);
+    border-radius: .5rem;
+    padding: 1rem;
+    border: 1px solid #000;
+    background-color: var(--color-bg, #2e2e2e);
+    color: rgb(255, 255, 255);
+}
+.component__usage--script{
+    color: #800080;
+}

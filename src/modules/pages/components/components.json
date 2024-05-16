@@ -1,0 +1,90 @@
+[
+  {
+    "name": "alert",
+    "description": "El componente pure-alert proporciona una forma sencilla de mostrar mensajes de alerta en una aplicación web. Puede ser utilizado para notificar al usuario sobre eventos importantes o para mostrar mensajes de error, advertencia, información, etc.",
+    "usage": {
+      "script": "import 'pure-ui-web-components';",
+      "example": "<pure-alert></pure-alert>"
+    },
+    "properties": [
+      {
+        "name": "status",
+        "type": "boolean"
+      },
+      {
+        "name": "text",
+        "type": "string"
+      },
+      {
+        "name": "type",
+        "type": "info | error | success | warning",
+        "default": "Por defecto es 'info'."
+      }
+    ],
+    "customStyles": [
+      {
+        "code": "--pure-alert-bg",
+        "desc": "Color de fondo del componente."
+      },
+      {
+        "code": "--pure-alert-color",
+        "desc": "Color del texto del componente."
+      },
+      {
+        "code": "--pure-alert-close-fill",
+        "desc": "Color del icono de cierre."
+      }
+    ],
+    "example": "<pure-alert status text=\"Mensaje de alerta\" type=\"warning\"></pure-alert>"
+  },
+  {
+    "name": "button",
+    "description": "El componente pure-button proporciona un botón personalizable que puede ser utilizado en aplicaciones web para interactuar con los usuarios.",
+    "usage": {
+      "script": "import 'pure-ui-web-components';",
+      "example": "<pure-button></pure-button>"
+    },
+    "properties": [
+      {
+        "name": "text",
+        "type": "string"
+      },
+      {
+        "name": "btnClass",
+        "type": "string"
+      },
+      {
+        "name": "size",
+        "type": "small | medium | large",
+        "default": "Por defecto es 'info'."
+      }
+    ],
+    "customStyles": [
+      {
+        "code": "--pure-button-primary-bg",
+        "desc": "Color de fondo del componente."
+      },
+      {
+        "code": "--pure-button-primary-bg-hover",
+        "desc": "Color del hover del componente."
+      },
+      {
+        "code": "--pure-button-primary-color",
+        "desc": "Color del texto del componente."
+      },
+      {
+        "code": "--pure-button-secondary-bg",
+        "desc": "Color de fondo del componente."
+      },
+      {
+        "code": "--pure-button-secondary-bg-hover",
+        "desc": "Color del hover del componente."
+      },
+      {
+        "code": "--pure-button-secondary-color",
+        "desc": "Color del texto del componente."
+      }
+    ],
+    "example": "<pure-button text=\"Primary Button\"></pure-button>"
+  }
+]
