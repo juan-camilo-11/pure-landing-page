@@ -23,7 +23,7 @@ function Components() {
         alert: <Alert />,
         button: <Alert />,
       };
-
+      
     return (
         <section>
             {dataComponent ?
