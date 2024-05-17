@@ -16,6 +16,13 @@ pure-navbar{
 .header__title{
     color: var(--color-white)
 }
+.header__name{
+    color: var(--color-light-grey);
+    
+}
+.header__name span{
+    color: var(--color-blue);
+}
 @media screen and (max-width: 320px) {}
 
 @media screen and (min-width: 321px) and (max-width: 480px) {}

@@ -16,13 +16,13 @@ function Header() {
     return (
         <header className="header">
             <div className="header__nav">
-                <pure-navbar navItems={JSON.stringify(items)}></pure-navbar>
+                <pure-navbar logoText="</Pure>" navItems={JSON.stringify(items)}></pure-navbar>
             </div>
             <div className="header__title">
-                <h2>Pure Documentacion</h2>
+                <h2>Documentacion</h2>
             </div>
-            <div className="header__buttons">
-                <button>No lo se</button>
+            <div className="header__name">
+                <h4>&lt;/<span>Pure</span>&gt;</h4>
             </div>
         </header>
     );
