@@ -10,7 +10,7 @@ import Componentes from './modules/pages/components/components';
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/pure-landing-page/build">
       <Layout>
         <Routes>
           <Route path="/introduccion" element={<Introduction />} />
