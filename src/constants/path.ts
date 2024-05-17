@@ -1,0 +1,1 @@
+export const path = "/pure-landing-page/build";

@@ -1,16 +1,18 @@
 import "pure-ui-web-components";
 import "./header.css";
+import {path} from "../../../constants/path";
 
 function Header() {
+    console.log(`${path}/introduccion`)
     const items = [
-        {"text": "Introducción", "url": "/introduccion"},
+        {"text": "Introducción", "url": `${path}/introduccion`},
         {"text": "Componentes", "url": "/componentes", "subItems" : [
-            {"text":"Alert","url":"/componentes/alert"},
-            {"text":"Button","url":"/componentes/button"},
-            {"text":"Checkbox","url":"/componentes/checkbox"}
+            {"text":"Alert","url":`${path}/componentes/alert`},
+            {"text":"Button","url":`${path}/componentes/button`},
+            {"text":"Checkbox","url":`${path}/componentes/checkbox`}
         ]},
-        {"text": "Versiones", "url": "/versiones"},
-        {"text": "Nosotros", "url": "/nosotros"}
+        {"text": "Versiones", "url": `${path}/versiones`},
+        {"text": "Nosotros", "url": `${path}/nosotros`}
     ];
 
     return (
