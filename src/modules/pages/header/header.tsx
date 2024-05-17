@@ -3,7 +3,6 @@ import "./header.css";
 import {path} from "../../../constants/path";
 
 function Header() {
-    console.log(`${path}/introduccion`)
     const items = [
         {"text": "Introducción", "url": `${path}/introduccion`},
         {"text": "Componentes", "url": "/componentes", "subItems" : [

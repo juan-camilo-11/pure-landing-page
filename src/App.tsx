@@ -6,12 +6,11 @@ import { BrowserRouter as Router, Route, Routes, Navigate }from 'react-router-do
 import Layout from "./modules/pages/layout/layout";
 import Introduction from './modules/pages/introduccion/introduction';
 import Componentes from './modules/pages/components/components';
-import {path} from "./constants/path";
 
 function App() {
   return (
     <div className="App">
-      <Router basename={path}>
+      <Router basename='/pure-landing-page'>
       <Layout>
         <Routes>
           <Route path="/introduccion" element={<Introduction />} />

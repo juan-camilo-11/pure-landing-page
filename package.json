@@ -2,7 +2,7 @@
   "name": "landing-page-pure",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://juan-camilo-11.github.io/pure-landing-page/build",
+  "homepage": "https://juan-camilo-11.github.io/pure-landing-page",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
