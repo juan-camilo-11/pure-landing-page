@@ -19,6 +19,7 @@ function App() {
           {/**<Route path="/versiones" element={<Versiones />} />
           <Route path="/nosotros" element={<Nosotros />} />*/}
           <Route path="/" element={<Navigate to="/introduccion" />} />
+          <Route path="*" element={<Navigate to="/introduccion" />} />
         </Routes>
       </Layout>
     </Router>
