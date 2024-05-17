@@ -4,5 +4,6 @@ declare namespace JSX {
       'pure-navbar': any; // Puedes ajustar el tipo según necesites
       'pure-alert': any; // Puedes ajustar el tipo según necesites
       'pure-table': any;
+      'pure-checkbox': any;
     }
   }

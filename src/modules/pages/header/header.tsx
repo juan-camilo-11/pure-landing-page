@@ -6,7 +6,8 @@ function Header() {
         {"text": "Introducción", "url": "/introduccion"},
         {"text": "Componentes", "url": "/componentes", "subItems" : [
             {"text":"Alert","url":"/componentes/alert"},
-            {"text":"Button","url":"/componentes/button"}
+            {"text":"Button","url":"/componentes/button"},
+            {"text":"Checkbox","url":"/componentes/checkbox"}
         ]},
         {"text": "Versiones", "url": "/versiones"},
         {"text": "Nosotros", "url": "/nosotros"}

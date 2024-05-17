@@ -33,3 +33,8 @@
     padding: 0;
     cursor: pointer;
 }
+.detail__component{
+    display: grid;
+    place-items: center;
+    padding: 1rem 0;
+}

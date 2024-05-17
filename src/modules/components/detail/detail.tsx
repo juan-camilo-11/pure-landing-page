@@ -32,7 +32,7 @@ function Detail({ children, styleVariables }: DetailProps) {
                     </div>
                 )}
             </article>
-            <article>
+            <article className="detail__component">
                 {children}
             </article>
         </section>

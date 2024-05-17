@@ -1,6 +1,5 @@
 import "pure-ui-web-components";
-import "./alert.css";
-import { useEffect, useLayoutEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Detail from "../detail/detail";
 
 

@@ -66,9 +66,34 @@
           "name": "size",
           "desc": "Tamaño del botón",
           "type": "small | medium | large",
-          "default": "Por defecto es 'info'."
+          "default": "medium"
+        }
+      ]
+    }
+  },
+  {
+    "name": "checkbox",
+    "description": "pure-checkbox es un componente de casilla de verificación personalizado que puedes integrar fácilmente en tu proyecto.",
+    "usage": {
+      "script": "import 'pure-ui-web-components';",
+      "example": "<pure-checkbox status=\"true\"></pure-checkbox>"
+    },
+    "properties": {
+      "columns": [
+        {"header": "Propiedad"},
+        {"header": "Descripción"},
+        {"header": "Tipo"},
+        {"header": "Por defecto"}
+      ],
+      "rows": [
+        {
+          "name": "status",
+          "desc": "Indica el estado de la casilla de verificación. Puede ser \"true\" (activado), \"false\" (desactivado) o \"disabled\" (deshabilitado).",
+          "type": "string",
+          "default": "\"false\""
         }
       ]
     }
   }
+  
 ]

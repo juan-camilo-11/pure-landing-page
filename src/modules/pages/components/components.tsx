@@ -4,6 +4,8 @@ import "./components.css";
 import componentesData from './components.json';
 import { useEffect, useState } from "react";
 import Alert from "../../components/alert/alert";
+import Button from "../../components/button/button";
+import Checkbox from "../../components/checkbox/checkbox";
 
 function Components() {
     const [dataComponent, setDataComponent] = useState<any>(null);
@@ -21,7 +23,8 @@ function Components() {
     }
     const components: any = {
         alert: <Alert />,
-        button: <Alert />,
+        button: <Button />,
+        checkbox: <Checkbox />,
     };
 
     return (
