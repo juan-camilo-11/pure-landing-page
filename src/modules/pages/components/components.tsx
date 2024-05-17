@@ -22,29 +22,27 @@ function Components() {
     const components: any = {
         alert: <Alert />,
         button: <Alert />,
-      };
-      
+    };
+
     return (
         <section>
             {dataComponent ?
                 <article className="component">
                     <h2>{dataComponent.name}</h2>
-                    <p>{dataComponent.description}</p>
-                    {components[dataComponent.name]}
+                    <p className="component__description">{dataComponent.description}</p>
+
                     <div className="component__usage">
                         <p className="component__usage--script">{dataComponent.usage.script}</p>
                         <p>{dataComponent.usage.example}</p>
                     </div>
-                    <ul>
-                        {dataComponent.properties.map((item: { name: string, type: string }) =>
-                            <li>{item.name} - {item.type}</li>
-                        )}
-                    </ul>
-                    <ul>
-                        {dataComponent.customStyles.map((item: { code: string, desc: string }) =>
-                            <li>{item.code} - {item.desc}</li>
-                        )}
-                    </ul>
+
+
+                    {components[dataComponent.name]}
+
+
+                    <article className="component__properties">
+                        <pure-table content={JSON.stringify(dataComponent?.properties)}></pure-table>
+                    </article>
 
                 </article>
                 :

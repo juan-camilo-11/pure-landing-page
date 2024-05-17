@@ -4,8 +4,13 @@
     justify-content: center;
     align-items: flex-start;
     gap: .4rem;
+    width: 100%;
 }
-
+.component h2{
+    margin: .3rem 0;
+    color: #2b2b2b;
+    text-transform: capitalize;
+}
 .component__example{
     width: calc(100% - 2rem);
     border-radius: .5rem;
@@ -14,13 +19,18 @@
 }
 
 .component__usage{
-    width: calc(100% - 2rem);
+    width: 100%;
     border-radius: .5rem;
     padding: 1rem;
-    border: 1px solid #000;
-    background-color: var(--color-bg, #2e2e2e);
-    color: rgb(255, 255, 255);
+    margin-bottom: 1rem;
+    background-color: var(--color-grey);
+    color: #ffffff;
 }
 .component__usage--script{
-    color: #800080;
+    color: #ff54ff;
+}
+.component__properties{
+    width: 100%;
+    margin: 1rem auto;
+    overflow: auto;
 }

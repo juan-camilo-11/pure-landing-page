@@ -23,10 +23,10 @@ function Detail({ children, styleVariables }: DetailProps) {
             <article className="detail__styles">
                 {styleVariables?.map((style) =>
                     <div key={style}>
-                        <span>{style}:</span>
+                        <span>var({style})</span>
                         <input 
                             type="color" 
-                            value={colors[style] || '#000000'} 
+                            value={colors[style] || '#E9E9E9'} 
                             onChange={(event) => handleColorChange(style, event)} 
                         />
                     </div>

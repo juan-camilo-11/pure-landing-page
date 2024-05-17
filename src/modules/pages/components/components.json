@@ -6,36 +6,34 @@
       "script": "import 'pure-ui-web-components';",
       "example": "<pure-alert></pure-alert>"
     },
-    "properties": [
-      {
-        "name": "status",
-        "type": "boolean"
-      },
-      {
-        "name": "text",
-        "type": "string"
-      },
-      {
-        "name": "type",
-        "type": "info | error | success | warning",
-        "default": "Por defecto es 'info'."
-      }
-    ],
-    "customStyles": [
-      {
-        "code": "--pure-alert-bg",
-        "desc": "Color de fondo del componente."
-      },
-      {
-        "code": "--pure-alert-color",
-        "desc": "Color del texto del componente."
-      },
-      {
-        "code": "--pure-alert-close-fill",
-        "desc": "Color del icono de cierre."
-      }
-    ],
-    "example": "<pure-alert status text=\"Mensaje de alerta\" type=\"warning\"></pure-alert>"
+    "properties": {
+      "columns": [
+        {"header": "Propiedad"},
+        {"header": "Descripciòn"},
+        {"header": "Tipo"},
+        {"header": "Por defecto"}
+      ],
+      "rows": [
+        {
+          "name": "status",
+          "desc": "",
+          "type": "boolean",
+          "default": ""
+        },
+        {
+          "name": "text",
+          "desc": "",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "type",
+          "desc": "",
+          "type": "info | error | success | warning",
+          "default": "Info"
+        }
+      ]
+    }
   },
   {
     "name": "button",
@@ -44,47 +42,33 @@
       "script": "import 'pure-ui-web-components';",
       "example": "<pure-button></pure-button>"
     },
-    "properties": [
-      {
-        "name": "text",
-        "type": "string"
-      },
-      {
-        "name": "btnClass",
-        "type": "string"
-      },
-      {
-        "name": "size",
-        "type": "small | medium | large",
-        "default": "Por defecto es 'info'."
-      }
-    ],
-    "customStyles": [
-      {
-        "code": "--pure-button-primary-bg",
-        "desc": "Color de fondo del componente."
-      },
-      {
-        "code": "--pure-button-primary-bg-hover",
-        "desc": "Color del hover del componente."
-      },
-      {
-        "code": "--pure-button-primary-color",
-        "desc": "Color del texto del componente."
-      },
-      {
-        "code": "--pure-button-secondary-bg",
-        "desc": "Color de fondo del componente."
-      },
-      {
-        "code": "--pure-button-secondary-bg-hover",
-        "desc": "Color del hover del componente."
-      },
-      {
-        "code": "--pure-button-secondary-color",
-        "desc": "Color del texto del componente."
-      }
-    ],
-    "example": "<pure-button text=\"Primary Button\"></pure-button>"
+    "properties": {
+      "columns": [
+        {"header": "Propiedad"},
+        {"header": "Descripciòn"},
+        {"header": "Tipo"},
+        {"header": "Por defecto"}
+      ],
+      "rows": [
+        {
+          "name": "text",
+          "desc": "El texto que se mostrará en el botón",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "btnClass",
+          "desc": "Clase del botón",
+          "type": "primary | secondary",
+          "default": "primary"
+        },
+        {
+          "name": "size",
+          "desc": "Tamaño del botón",
+          "type": "small | medium | large",
+          "default": "Por defecto es 'info'."
+        }
+      ]
+    }
   }
 ]
