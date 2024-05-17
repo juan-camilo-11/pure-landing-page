@@ -1,1 +1,1 @@
-export const path = "/pure-landing-page";
+export const path = "/pure-landing-page/build";
