@@ -5,5 +5,10 @@ declare namespace JSX {
       'pure-alert': any; // Puedes ajustar el tipo según necesites
       'pure-table': any;
       'pure-checkbox': any;
+      'pure-dropdown': any;
+      'pure-input': any;
+      'pure-modal': any;
+      'pure-tag': any;
+      'pure-toggle': any;
     }
   }

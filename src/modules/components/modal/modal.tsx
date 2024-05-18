@@ -1,17 +1,14 @@
 import "pure-ui-web-components";
-import { useEffect, useState } from "react";
 import Detail from "../detail/detail";
+import { useEffect, useState } from "react";
 
 
-function Alert() {
+function Modal() {
     const [active, setActive] = useState(false);
 
-    const styleVariables = ["--pure-alert-bg", "--pure-alert-color", "--pure-alert-close-fill"];
-    
     const handlePureClick = () => {
-        setActive(prevActive => !prevActive);
+        setActive(prevActive => !prevActive); // Invierte el valor de active
     };
-
     useEffect(() => {
         const pureButton = document.querySelector("pure-button");
         pureButton?.addEventListener("onPureClick", handlePureClick);
@@ -21,12 +18,18 @@ function Alert() {
         };
     }, []);
 
+    useEffect(() => {
+        console.log("Estado actual de active:", active);
+    }, [active]); 
+
     return (
-        <Detail styleVariables={styleVariables}>
+        <Detail>
             <pure-button text={active ? "Reintentar" : "Probar"}></pure-button>
-            <pure-alert status={active}></pure-alert>
+            {active && (
+                <pure-modal status={active} showButton></pure-modal>
+            )}
         </Detail>
     );
 }
 
-export default Alert;
+export default Modal;

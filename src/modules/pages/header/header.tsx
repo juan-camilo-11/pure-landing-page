@@ -8,7 +8,14 @@ function Header() {
         {"text": "Componentes", "url": "/componentes", "subItems" : [
             {"text":"Alert","url":`${path}/componentes/alert`},
             {"text":"Button","url":`${path}/componentes/button`},
-            {"text":"Checkbox","url":`${path}/componentes/checkbox`}
+            {"text":"Checkbox","url":`${path}/componentes/checkbox`},
+            {"text":"Dropdown","url":`${path}/componentes/dropdown`},
+            {"text":"Input","url":`${path}/componentes/input`},
+            {"text":"Modal","url":`${path}/componentes/modal`},
+            {"text":"Navbar","url":`${path}/componentes/navbar`},
+            {"text":"Table","url":`${path}/componentes/table`},
+            {"text":"Tag","url":`${path}/componentes/tag`},
+            {"text":"Toggle","url":`${path}/componentes/toggle`}
         ]},
         {"text": "Versiones", "url": `${path}/versiones`},
         {"text": "Nosotros", "url": `${path}/nosotros`}

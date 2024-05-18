@@ -16,10 +16,14 @@ function Detail({ children, styleVariables }: DetailProps) {
             ...prevState,
             [variable]: newColor
         }));
-        document.body.style.setProperty(variable, newColor);
+        //document.body.style.setProperty(variable, newColor);
+        const detailElement = document.getElementById("detail");
+        if (detailElement) {
+          detailElement.style.setProperty(variable, newColor);
+        }
     };
     return (
-        <section className="detail">
+        <section id="detail" className="detail">
             <article className="detail__styles">
                 {styleVariables?.map((style) =>
                     <div key={style}>
@@ -31,6 +35,11 @@ function Detail({ children, styleVariables }: DetailProps) {
                         />
                     </div>
                 )}
+                {styleVariables === undefined && (
+                    <h4>No tiene</h4>
+                )
+
+                }
             </article>
             <article className="detail__component">
                 {children}

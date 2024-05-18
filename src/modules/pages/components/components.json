@@ -94,6 +94,280 @@
         }
       ]
     }
+  },
+  {
+    "name": "dropdown",
+    "description": "El componente pure-dropdown es un componente de menú desplegable personalizado que puedes integrar fácilmente en tu proyecto.",
+    "usage": {
+      "script": "import 'pure-ui-web-components';",
+      "example": "<pure-dropdown></pure-dropdown>"
+    },
+    "properties": {
+      "columns": [
+        {"header": "Propiedad"},
+        {"header": "Descripción"},
+        {"header": "Tipo"},
+        {"header": "Por defecto"}
+      ],
+      "rows": [
+        {
+          "name": "status",
+          "desc": "Indica el estado del menú desplegable",
+          "type": "\"true\" | \"false\" | \"disabled\"",
+          "default": "\"false\""
+        },
+        {
+          "name": "placeholder",
+          "desc": "Texto que se muestra cuando no se ha seleccionado ninguna opción",
+          "type": "string",
+          "default": "Seleccione"
+        },
+        {
+          "name": "options",
+          "desc": "Lista de opciones disponibles para seleccionar",
+          "type": "array",
+          "default": "[\"Opcion 1\",\"Opcion 2\"]"
+        },
+        {
+          "name": "selectOption",
+          "desc": "Opción actualmente seleccionada",
+          "type": "string",
+          "default": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "input",
+    "description": "El componente pure-input es un elemento de entrada de formulario personalizado que ofrece flexibilidad y estilo a través de propiedades personalizadas.",
+    "usage": {
+      "script": "import 'pure-ui-web-components';",
+      "example": "<pure-input></pure-input>"
+    },
+    "properties": {
+      "columns": [
+        {"header": "Propiedad"},
+        {"header": "Descripción"},
+        {"header": "Tipo"},
+        {"header": "Por defecto"}
+      ],
+      "rows": [
+        {
+          "name": "size",
+          "desc": "Define el tamaño del componente",
+          "type": "\"small\" | \"medium\" | \"large\"",
+          "default": "\"medium\""
+        },
+        {
+          "name": "message",
+          "desc": "Un mensaje opcional que se mostrará debajo del componente de entrada",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "placeholder",
+          "desc": "El texto de marcador de posición que se muestra dentro del componente de entrada cuando",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "defaultValue",
+          "desc": "El valor predeterminado del componente de entrada.",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "status",
+          "desc": "El estado del componente",
+          "type": "\"info\" | \"error\"",
+          "default": "\"info\""
+        },
+        {
+          "name": "type",
+          "desc": "El tipo de entrada del componente",
+          "type": "string",
+          "default": "\"text\""
+        }
+      ]
+    }
+  },
+  {
+    "name": "modal",
+    "description": "El componente pure-modal es una ventana emergente que se utiliza para mostrar información importante, mensajes de confirmación o solicitar la entrada del usuario de manera contextual.",
+    "usage": {
+      "script": "import 'pure-ui-web-components';",
+      "example": "<pure-modal></pure-modal>"
+    },
+    "properties": {
+      "columns": [
+        {"header": "Propiedad"},
+        {"header": "Descripción"},
+        {"header": "Tipo"},
+        {"header": "Por defecto"}
+      ],
+      "rows": [
+        {
+          "name": "status",
+          "desc": "Define si el modal está visible o no.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "text",
+          "desc": "El texto principal que se mostrará en el modal.",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "desc",
+          "desc": "Una descripción adicional que se mostrará en el modal.",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "showButton",
+          "desc": "Un indicador booleano para mostrar u ocultar un botón en el modal.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "btnText",
+          "desc": "El texto del botón si showButton es true.",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "type",
+          "desc": "El tipo de mensaje que afecta el estilo y el icono del modal",
+          "type": "string",
+          "default": "\"info\" | \"success\" | \"error\" | \"warning\""
+        }
+      ]
+    }
+  },
+  {
+    "name": "navbar",
+    "description": "El componente pure-navbar es una barra de navegación personalizable que se utiliza para mostrar enlaces a diferentes secciones de un sitio web.",
+    "usage": {
+      "script": "import 'pure-ui-web-components';",
+      "example": "<pure-navbar></pure-navbar>"
+    },
+    "properties": {
+      "columns": [
+        {"header": "Propiedad"},
+        {"header": "Descripciòn"},
+        {"header": "Tipo"},
+        {"header": "Por defecto"}
+      ],
+      "rows": [
+        {
+          "name": "navItems",
+          "desc": "Una cadena JSON que contiene la información de los elementos de navegación",
+          "type": "[{\"text\": valor, \"url\": valor}]",
+          "default": ""
+        },
+        {
+          "name": "logoUrl",
+          "desc": "La URL de la imagen del logo que se mostrará en la barra de navegación",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "logoText",
+          "desc": "El texto alternativo del logo",
+          "type": "string",
+          "default": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "table",
+    "description": "El componente pure-table es una tabla HTML personalizada diseñada para proporcionar una experiencia de usuario limpia y minimalista. Este componente se utiliza para mostrar datos tabulares de manera estructurada y legible.",
+    "usage": {
+      "script": "import 'pure-ui-web-components';",
+      "example": "<pure-table></pure-table>"
+    },
+    "properties": {
+      "columns": [
+        {"header": "Propiedad"},
+        {"header": "Descripción"},
+        {"header": "Tipo"},
+        {"header": "Por defecto"}
+      ],
+      "rows": [
+        {
+          "name": "content",
+          "desc": "Este atributo acepta un string en formato JSON que define el contenido de la tabla. Debe contener una lista de columnas y filas.",
+          "type": "string",
+          "default": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "tag",
+    "description": "El componente pure-tag es un elemento de etiqueta personalizado que se utiliza para mostrar mensajes o etiquetas con diferentes estilos y colores.",
+    "usage": {
+      "script": "import 'pure-ui-web-components';",
+      "example": "<pure-tag></pure-tag>"
+    },
+    "properties": {
+      "columns": [
+        {"header": "Propiedad"},
+        {"header": "Descripción"},
+        {"header": "Tipo"},
+        {"header": "Por defecto"}
+      ],
+      "rows": [
+        {
+          "name": "size",
+          "desc": "Define el tamaño del componente",
+          "type": "\"small\" | \"medium\" | \"large\"",
+          "default": "\"medium\""
+        },
+        {
+          "name": "text",
+          "desc": "El texto que se mostrará dentro del componente de etiqueta.",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "type",
+          "desc": "El tipo de mensaje que determina el color de fondo de la etiqueta",
+          "type": "\"info\" | \"success\" | \"error\" | \"warning\"",
+          "default": "\"info\""
+        }
+      ]
+    }
+  },
+  {
+    "name": "toggle",
+    "description": "El componente pure-toggle es un interruptor personalizado que permite a los usuarios cambiar entre dos estados, como activado y desactivado.",
+    "usage": {
+      "script": "import 'pure-ui-web-components';",
+      "example": "<pure-toggle></pure-toggle>"
+    },
+    "properties": {
+      "columns": [
+        {"header": "Propiedad"},
+        {"header": "Descripción"},
+        {"header": "Tipo"},
+        {"header": "Por defecto"}
+      ],
+      "rows": [
+        {
+          "name": "status",
+          "desc": "Define el estado inicial del interruptor",
+          "type": "'true' | 'false' | 'disabled'",
+          "default": ""
+        }
+      ]
+    }
   }
+  
+  
+  
+  
   
 ]
