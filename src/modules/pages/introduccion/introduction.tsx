@@ -1,6 +1,7 @@
 import "pure-ui-web-components";
 import "./introduction.css";
 import imagenPNG from '../../../img/logo.png';
+import {path} from "../../../constants/path";
 
 const content = {
     title: "Introducción a Pure Libreria de Web components",
@@ -13,6 +14,7 @@ const content = {
     },
     install: {
         code: "npm i pure-ui-web-components",
+        import: "import \"pure-ui-web-components\"",
         version: "Actualmente v2.0.0"
     },
     mainFeatures: [
@@ -27,26 +29,50 @@ const content = {
 function Introduction() {
     return (
         <section className="introduction">
-            <div className="introduction__icono">
+            <article className="introduction__title">
+                <h2>¿Que es Pure?</h2>
                 <img src={imagenPNG} alt="Logo de Pure WC" />
-            </div>
-            <div className="introduction__title">
-                <h2>{content.title}</h2>
-            </div>
-            <div className="introduction__desc">
-                <p>{content.library.description}</p>
-            </div>
-            <div className="introduction__install-code">
-                <p>{content.install.code}</p>
-                <span className="introduction__install-version">{content.install.version}</span>
-            </div>
-            <div className="introduction__features">
+                <p>
+                    Pure es una colección de Web Components diseñada para simplificar el desarrollo de aplicaciones web modernas.
+                </p>
+                <p>
+                Ofrece una variedad de componentes personalizables y fáciles de usar que abarcan desde botones y barras de navegación hasta formularios complejos y paneles de datos.
+                </p>
+            </article>
+            <article className="introduction__install">
+                <h2>Instalar de forma local con NPM</h2>
+                <span>Pure está disponible como paquete a través de npm.</span>
+                <p className="introduction__install--code">npm i pure-ui-web-components</p>
+                <span>Luego importe:</span>
+                <p className="introduction__install--import"><span>import</span> "pure-ui-web-components"</p>
+            </article>
+            <article className="introduction__features">
+                <h2>¿Porque deberia escoger Pure?</h2>
                 <ul>
-                    {content.mainFeatures.map((feature, index)=>
-                        <li key={index}>{feature}</li>
-                    )}
+                    <li>
+                        <span>Facilidad.</span> Los componentes de Pure se integran sin problemas en proyectos web existentes y son fáciles de personalizar según las necesidades del usuario.
+                    </li>
+                    <li>
+                        <span>Personalización.</span> Cada componente se puede personalizar mediante atributos, estilos y eventos, lo que permite adaptarlo a la estética y funcionalidad de la aplicación.
+                    </li>
+                    <li>
+                        <span>Compatibilidad.</span> Todos los componentes de Pure están construidos siguiendo las especificaciones de Web Components, lo que garantiza su compatibilidad con otras bibliotecas y frameworks web.
+                    </li>
                 </ul>
-            </div>
+            </article>
+            <article className="introduction__steps">
+                <h2>Proximos pasos:</h2>
+                <ul>
+                    <li>
+                        <a href={`${path}/componentes/alert`}>Componentes: </a>
+                        <span>Obten informacion de los componentes.</span>
+                    </li>
+                    <li>
+                        <a href={`${path}/versiones`}>Versiones: </a>
+                        <span>Obten mas informacion de las recientes versiones.</span>
+                    </li>
+                </ul>
+            </article>
         </section>
     );
 }

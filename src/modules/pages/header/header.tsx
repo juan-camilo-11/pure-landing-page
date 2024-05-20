@@ -30,7 +30,7 @@ function Header() {
                 <h2>Documentacion</h2>
             </div>
             <div className="header__name">
-                <h4>&lt;/<span>Pure</span>&gt;</h4>
+                <a href={`${path}/introduccion`}>&lt;/<span>Pure</span>&gt;</a>
             </div>
         </header>
     );

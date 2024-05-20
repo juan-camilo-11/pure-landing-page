@@ -16,9 +16,9 @@ pure-navbar{
 .header__title{
     color: var(--color-white)
 }
-.header__name{
+.header__name a{
     color: var(--color-light-grey);
-    
+    text-decoration: none;
 }
 .header__name span{
     color: var(--color-blue);

@@ -1,5 +1,5 @@
 .introduction{
-    width: calc(100% - 1rem);
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -7,19 +7,43 @@
     align-items: flex-start;
     padding: 0 .5rem;
 }
-.introduction__icono{
-    width: auto;
-    height: 70px;
+.introduction h2{
+    margin: 1rem 0;
+    padding: 1rem 0;
+    border-bottom: 2px solid var(--color-blue, #000);
 }
-.introduction__icono img{
+.introduction p, 
+.introduction span, 
+.introduction li{
+    color: var(--color-grey);
+}
+.introduction__title img{
+    width: 100px;
+    height: auto;
+}
+.introduction article{
     width: 100%;
-    height: 100%;
 }
-.introduction__install-code p{
+.introduction__features li,
+.introduction__steps li
+{
+    margin: 1rem 0;
+}
+.introduction__features span{
+    color: var(--color-black);
+    font-weight: 700;
+}
+.introduction__steps a{
+    color: var(--color-blue);
+    text-decoration: none;
+}
+.introduction__install p{
     padding: 1rem;
-    border: solid 1px var(--color-black);
-    border-radius: .3rem;
+    background-color: var(--color-grey);
+    color: var(--color-white);
+    border-radius: .5rem;
+    border: 1px solid var(--color-grey);
 }
-.introduction__install-code span{
-    font-size: .9rem;
+.introduction__install--import span{
+    color: var(--color-pink);
 }
