@@ -1,29 +1,21 @@
-name: Deploy
-
+name: Build and Deploy
 on:
   push:
     branches:
       - master
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout código
-        uses: actions/checkout@v2
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
 
-      - name: Configurar identidad de Git
-        run: |
-          git config --global user.email "thekmilo84@gmail.com"
-          git config --global user.name "juan-camilo-11"
+      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+        run: npm run build
 
-      - name: Instalar dependencias
-        run: npm install
-
-      - name: Ejecutar npm run deploy
-        env:
-          GH_PAGES_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
-        run: |
-          npm install -g gh-pages
-          npm run deploy
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GH_PAGES_TOKEN }}
+          publish_dir: ./build
