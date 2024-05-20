@@ -1,7 +1,7 @@
 import "pure-ui-web-components";
 import "./introduction.css";
 import imagenPNG from '../../../img/logo.png';
-import {path} from "../../../constants/path";
+import { path } from "../../../constants/path";
 
 function Introduction() {
     return (
@@ -13,7 +13,7 @@ function Introduction() {
                     Pure es una colección de Web Components diseñada para simplificar el desarrollo de aplicaciones web modernas.
                 </p>
                 <p>
-                Ofrece una variedad de componentes personalizables y fáciles de usar que abarcan desde botones y barras de navegación hasta formularios complejos y paneles de datos.
+                    Ofrece una variedad de componentes personalizables y fáciles de usar que abarcan desde botones y barras de navegación hasta formularios complejos y paneles de datos.
                 </p>
             </article>
             <article className="introduction__install">

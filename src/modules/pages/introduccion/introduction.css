@@ -28,6 +28,7 @@
 .introduction__steps li
 {
     margin: 1rem 0;
+    line-height: 1.5;
 }
 .introduction__features span{
     color: var(--color-black);
