@@ -1,0 +1,13 @@
+.versions div{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.versions h4{
+    margin: 1rem 0;
+    padding: 1rem 0;
+    border-bottom: 2px solid var(--color-blue, #000);
+}
+.versions ul li {
+    color: var(--color-grey);
+    margin: .3rem;
+}

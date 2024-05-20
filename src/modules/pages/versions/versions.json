@@ -1,0 +1,129 @@
+[
+    {
+      "version": "1.2.0",
+      "news": "",
+      "components": [
+        {
+          "name": "Alert",
+          "Element": "pure-alert",
+          "bugs": "",
+          "news": ""
+        },
+        {
+          "name": "Button",
+          "Element": "pure-button",
+          "bugs": "",
+          "news": ""
+        },
+        {
+          "name": "Checkbox",
+          "Element": "pure-checkbox",
+          "bugs": "",
+          "news": ""
+        },
+        {
+          "name": "Dropdown",
+          "Element": "pure-dropdown",
+          "bugs": "",
+          "news": ""
+        },
+        {
+          "name": "Input",
+          "Element": "pure-input",
+          "bugs": "",
+          "news": ""
+        },
+        {
+          "name": "Modal",
+          "Element": "pure-modal",
+          "bugs": "",
+          "news": ""
+        },
+        {
+          "name": "Tag",
+          "Element": "pure-tag",
+          "bugs": "",
+          "news": ""
+        },
+        {
+          "name": "toggle",
+          "Element": "pure-toggle",
+          "bugs": "",
+          "news": ""
+        }
+      ]
+    },
+    {
+      "version": "1.2.1",
+      "news": "",
+      "components": [
+        {
+          "name": "Navbar",
+          "Element": "pure-navbar",
+          "bugs": "error en el atributo de navItems",
+          "news": ""
+        }
+      ]
+    },
+    {
+      "version": "1.2.2",
+      "news": "",
+      "components": [
+        {
+          "name": "Navbar",
+          "Element": "pure-navbar",
+          "bugs": "",
+          "news": "Se arregla bug, y se genera nueva version de navbar. nuevo estilo"
+        }
+      ]
+    },
+    {
+      "version": "2.0.0",
+      "news": "Se agrega nueva caracteristica colores personalizables",
+      "components": [
+        {
+          "name": "Navbar",
+          "Element": "pure-navbar",
+          "bugs": "",
+          "news": "Se arregla bug, y se genera nueva version de navbar. nuevo estilo"
+        }
+      ]
+    },
+    {
+      "version": "2.0.1",
+      "news": "",
+      "components": [
+        {
+          "name": "Navbar",
+          "Element": "pure-navbar",
+          "bugs": "",
+          "news": "Se agrega nueva funcionalidad, subItems"
+        }
+      ]
+    },
+    {
+      "version": "2.0.2",
+      "news": "",
+      "components": [
+        {
+          "name": "table",
+          "Element": "pure-table",
+          "bugs": "",
+          "news": "Se agregra nuevo componente table"
+        }
+      ]
+    },
+    {
+      "version": "2.0.3",
+      "news": "",
+      "components": [
+        {
+          "name": "table",
+          "Element": "pure-table",
+          "bugs": "",
+          "news": "Ajustes de espacio y color para el componente table"
+        }
+      ]
+    }
+  ]
+  
