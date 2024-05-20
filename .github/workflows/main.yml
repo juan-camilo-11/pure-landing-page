@@ -12,6 +12,11 @@ jobs:
     steps:
     - name: Checkout código
       uses: actions/checkout@v2
+
+    - name: Configurar identidad de Git
+      run: |
+        git config --global user.email "thekmilo84@gmail.com"
+        git config --global user.name "juan-camilo-11"
       
     - name: Instalar dependencias
       run: npm install
