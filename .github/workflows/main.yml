@@ -21,5 +21,8 @@ jobs:
     - name: Instalar dependencias
       run: npm install
 
-    - name: Ejecutar npm run deploy
+     - name: Ejecutar npm run deploy
+      run: npm install -g gh-pages
+      env:
+        GH_PAGES_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
       run: npm run deploy
