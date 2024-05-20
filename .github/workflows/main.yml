@@ -22,8 +22,8 @@ jobs:
         run: npm install
 
       - name: Ejecutar npm run deploy
+        env:
+          GH_PAGES_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
         run: |
           npm install -g gh-pages
-          env:
-            GH_PAGES_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
           npm run deploy
