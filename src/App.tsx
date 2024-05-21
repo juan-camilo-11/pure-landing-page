@@ -7,6 +7,7 @@ import Layout from "./modules/pages/layout/layout";
 import Introduction from './modules/pages/introduccion/introduction';
 import Componentes from './modules/pages/components/components';
 import Versions from './modules/pages/versions/versions';
+import AboutUs from './modules/pages/aboutUs/aboutUs';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
           <Route path="/introduccion" element={<Introduction />} />
           <Route path="/componentes/*" element={<Componentes />} />
           <Route path="/versiones" element={<Versions />} />
-          {/**<Route path="/nosotros" element={<Nosotros />} />*/}
+          <Route path="/nosotros" element={<AboutUs />} />
           <Route path="/" element={<Navigate to="/introduccion" />} />
           <Route path="*" element={<Navigate to="/introduccion" />} />
         </Routes>
