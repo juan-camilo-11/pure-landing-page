@@ -4,4 +4,5 @@
 }
 .aboutUs p{
     line-height: 1.3;
+    color: var(--color-grey);
 }

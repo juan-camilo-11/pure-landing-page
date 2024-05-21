@@ -124,6 +124,24 @@
           "news": "Ajustes de espacio y color para el componente table"
         }
       ]
+    },
+    {
+      "version": "2.0.4",
+      "news": "",
+      "components": [
+        {
+          "name": "toggle",
+          "Element": "pure-toggle",
+          "bugs": "",
+          "news": "se agrega ancho fijo"
+        },
+        {
+          "name": "Navbar",
+          "Element": "pure-navbar",
+          "bugs": "",
+          "news": "se agrega scroll"
+        }
+      ]
     }
   ]
   
