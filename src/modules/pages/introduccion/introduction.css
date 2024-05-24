@@ -45,6 +45,10 @@
     border-radius: .5rem;
     border: 1px solid var(--color-grey);
 }
+.introduction__install--code{
+    --pure-copy-bg: var(--color-blue);
+    margin: 1rem 0;
+}
 .introduction__install--import span{
     color: var(--color-pink);
 }

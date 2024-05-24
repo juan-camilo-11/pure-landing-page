@@ -142,6 +142,18 @@
           "news": "se agrega scroll"
         }
       ]
+    },
+    {
+      "version": "2.0.5",
+      "news": "Nuevo componente Copy",
+      "components": [
+        {
+          "name": "Copy",
+          "Element": "pure-copy",
+          "bugs": "",
+          "news": "Nuevo"
+        }
+      ]
     }
   ]
   

@@ -364,7 +364,38 @@
         }
       ]
     }
+  },
+  {
+    "name": "copy",
+    "description": "El componente pure-copy es un elemento de interfaz que permite a los usuarios copiar texto de manera fácil y rápida.",
+    "usage": {
+      "script": "import 'pure-ui-web-components';",
+      "example": "<pure-copy></pure-copy>"
+    },
+    "properties": {
+      "columns": [
+        {"header": "Propiedad"},
+        {"header": "Descripción"},
+        {"header": "Tipo"},
+        {"header": "Por defecto"}
+      ],
+      "rows": [
+        {
+          "name": "size",
+          "desc": "Define el tamaño del componente.",
+          "type": "'small' | 'medium' | 'large'",
+          "default": "'medium'"
+        },
+        {
+          "name": "text",
+          "desc": "El texto que se mostrará y se copiará.",
+          "type": "string",
+          "default": ""
+        }
+      ]
+    }
   }
+  
   
   
   

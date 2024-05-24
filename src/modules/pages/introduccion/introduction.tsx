@@ -2,8 +2,24 @@ import "pure-ui-web-components";
 import "./introduction.css";
 import imagenPNG from '../../../img/logo.png';
 import { path } from "../../../constants/path";
+import { useEffect, useState } from "react";
 
 function Introduction() {
+    const [active, setActive] = useState(false);
+    
+    const handlePureClick = () => {
+        setActive(prevActive => !prevActive);
+    };
+
+    useEffect(() => {
+        const pureButton = document.querySelector("pure-copy");
+        pureButton?.addEventListener("onPureCopy", handlePureClick);
+
+        return () => {
+            pureButton?.removeEventListener("onPureCopy", handlePureClick);
+        };
+    }, []);
+
     return (
         <section className="introduction">
             <article className="introduction__title">
@@ -19,7 +35,10 @@ function Introduction() {
             <article className="introduction__install">
                 <h2>Instalar de forma local con NPM</h2>
                 <span>Pure está disponible como paquete a través de npm.</span>
-                <p className="introduction__install--code">npm i pure-ui-web-components</p>
+                <div className="introduction__install--code">
+                    <pure-copy text="npm i pure-ui-web-components" size="large"></pure-copy>
+                    <pure-alert text="Texto Copiado!!" status={active}></pure-alert>
+                </div>
                 <span>Luego importe:</span>
                 <p className="introduction__install--import"><span>import</span> "pure-ui-web-components"</p>
             </article>

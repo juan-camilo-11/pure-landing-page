@@ -9,6 +9,7 @@ function Header() {
             {"text":"Alert","url":`${path}/componentes/alert`},
             {"text":"Button","url":`${path}/componentes/button`},
             {"text":"Checkbox","url":`${path}/componentes/checkbox`},
+            {"text":"Copy","url":`${path}/componentes/copy`},
             {"text":"Dropdown","url":`${path}/componentes/dropdown`},
             {"text":"Input","url":`${path}/componentes/input`},
             {"text":"Modal","url":`${path}/componentes/modal`},

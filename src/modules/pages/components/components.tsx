@@ -13,6 +13,7 @@ import Navbar from "../../components/navbar/navbar";
 import Table from "../../components/table/table";
 import Tag from "../../components/tag/tag";
 import Toggle from "../../components/toggle/toggle";
+import Copy from "../../components/copy/copy";
 
 function Components() {
     const [dataComponent, setDataComponent] = useState<any>(null);
@@ -32,6 +33,7 @@ function Components() {
         alert: <Alert />,
         button: <Button />,
         checkbox: <Checkbox />,
+        copy: <Copy />,
         dropdown: <Dropdown />,
         input: <Input />,
         modal: <Modal />,

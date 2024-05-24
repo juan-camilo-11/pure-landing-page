@@ -1,7 +1,7 @@
 import "pure-ui-web-components";
 import "./layout.css";
-import Header from "../header/header"; 
-import Footer from "../footer/footer"; 
+import Header from "../../components/header/header"; 
+import Footer from "../../components/footer/footer"; 
 
 function Layout({ children }:any) {
     return (

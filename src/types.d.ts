@@ -10,5 +10,6 @@ declare namespace JSX {
       'pure-modal': any;
       'pure-tag': any;
       'pure-toggle': any;
+      'pure-copy': any;
     }
   }
