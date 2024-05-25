@@ -154,6 +154,18 @@
           "news": "Nuevo"
         }
       ]
+    },
+    {
+      "version": "2.0.6",
+      "news": "",
+      "components": [
+        {
+          "name": "Button",
+          "Element": "pure-button",
+          "bugs": [],
+          "news": ["Se arregla el max-width y se agregan variables de estilo"]
+        }
+      ]
     }
   ]
   
