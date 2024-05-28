@@ -3,7 +3,7 @@ import Detail from "../detail/detail";
 
 
 function Copy() {
-    const styleVariables = ["--pure-copy-bg","--pure-copy-color","--pure-input-bg", "--pure-copy-bg-hover"];
+    const styleVariables = ["--pure-copy-bg","--pure-copy-color","--pure-input-bg", "--pure-copy-bg-hover","--pure-input-color"];
     return (
         <Detail styleVariables={styleVariables}>
             <pure-copy></pure-copy>
