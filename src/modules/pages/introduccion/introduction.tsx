@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 function Introduction() {
     const [active, setActive] = useState(false);
-    
+
     const handlePureClick = () => {
         setActive(prevActive => !prevActive);
     };
@@ -40,7 +40,9 @@ function Introduction() {
                     <pure-alert text="Texto Copiado!!" status={active}></pure-alert>
                 </div>
                 <span>Luego importe:</span>
-                <p className="introduction__install--import"><span>import</span> "pure-ui-web-components"</p>
+                <div className="introduction__install--code">
+                    <pure-copy text='import "pure-ui-web-components"' size="large"></pure-copy>
+                </div>
             </article>
             <article className="introduction__features">
                 <h2>¿Porque deberia escoger Pure?</h2>
