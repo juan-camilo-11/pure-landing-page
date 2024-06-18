@@ -394,7 +394,56 @@
         }
       ]
     }
+  },
+  {
+    "name": "expand",
+    "description": "El componente pure-expand es un elemento de interfaz que permite expandir y mostrar contenido adicional al hacer clic en un botón.",
+    "usage": {
+      "script": "import 'pure-ui-web-components';",
+      "example": "<pure-expand></pure-expand>"
+    },
+    "properties": {
+      "columns": [
+        {"header": "Propiedad"},
+        {"header": "Descripción"},
+        {"header": "Tipo"},
+        {"header": "Por defecto"}
+      ],
+      "rows": [
+        {
+          "name": "options",
+          "desc": "Opciones de navegación a mostrar cuando se expande.",
+          "type": "[{'text':'Texto','to':'redirect'}]",
+          "default": ""
+        },
+        {
+          "name": "optionsTitle",
+          "desc": "Título (opcional)",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "optionsSubtitle",
+          "desc": "Subtítulo (opcional)",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "optionsFooter",
+          "desc": "Texto y redireccion (Opcional)",
+          "type": "{'text':'Footer', 'to': false}",
+          "default": ""
+        },
+        {
+          "name": "position",
+          "desc": "Posición de la expansión.",
+          "type": " left | right",
+          "default": "left"
+        }
+      ]
+    }
   }
+  
   
   
   

@@ -197,5 +197,24 @@
       "components": [
       ]
     }
+    ,
+    {
+      "version": "2.1.4",
+      "news": "Cambio interno - no afecta funcionamiento",
+      "components": [
+      ]
+    },
+    {
+      "version": "2.1.5",
+      "news": "Nuevo componente Expand",
+      "components": [
+        {
+          "name": "Expand",
+          "Element": "pure-expand",
+          "bugs": "",
+          "news": "Nuevo"
+        }
+      ]
+    }
   ]
   

@@ -11,6 +11,7 @@ function Header() {
             {"text":"Checkbox","url":`${path}/componentes/checkbox`},
             {"text":"Copy","url":`${path}/componentes/copy`},
             {"text":"Dropdown","url":`${path}/componentes/dropdown`},
+            {"text":"Expand","url":`${path}/componentes/expand`},
             {"text":"Input","url":`${path}/componentes/input`},
             {"text":"Modal","url":`${path}/componentes/modal`},
             {"text":"Navbar","url":`${path}/componentes/navbar`},

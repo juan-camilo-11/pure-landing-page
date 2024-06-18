@@ -14,6 +14,7 @@ import Table from "../../components/table/table";
 import Tag from "../../components/tag/tag";
 import Toggle from "../../components/toggle/toggle";
 import Copy from "../../components/copy/copy";
+import Expand from "../../components/expand/expand";
 
 function Components() {
     const [dataComponent, setDataComponent] = useState<any>(null);
@@ -35,6 +36,7 @@ function Components() {
         checkbox: <Checkbox />,
         copy: <Copy />,
         dropdown: <Dropdown />,
+        expand: <Expand />,
         input: <Input />,
         modal: <Modal />,
         navbar: <Navbar />,
